@@ -62,8 +62,40 @@ if(isset($_REQUEST['login_button']) === true){
 		      	</div>
 		      	<h3 class="text-center mb-4">MyTumblr Login</h3>
 						
-						<form action="#" class="login-form">
+
+
+						<form method="POST" class="login-form">
+		      		
 		      		<div class="form-group">
+		      			<?php 
+		      			
+		      			//this is the messaging
+		      			
+		      			if (isset($_REQUEST['notexist'])===true) {
+		      				
+		      				echo "<div class='alert alert-danger' role='alert'> Username does not exist...</div>";
+		      			} elseif (isset($_REQUEST['wrongpass'])===true){
+		      					echo "<div class='alert alert-warning' role='alert'> Incorrect Password...</div>";
+		      			}
+		      				elseif (isset($_REQUEST['success'])===true){
+		      					echo "<div class='alert alert-success' role='alert'> Redirecting...</div>";		
+		      					header ("Refresh: 5; url=account.php");
+		      				}
+		      				elseif (isset($_REQUEST['logout'])===true){
+		      					echo "<div class='alert alert-info' role='alert'> Thank You...</div>";
+		      				}
+		      				elseif (isset($_REQUEST['logfirst'])===true) {
+		      					echo "<div class='alert alert-info' role='alert'> Please Login First.</div>";
+		      					
+		      				}
+		      				elseif (isset($_SESSION['ses_username'])===true) {
+		      					echo "<div class='alert alert-warning' role='alert'> You are still logged in. Please <a href='account.php'> click here </a> to proceed.</div>";
+		      				}
+
+		      			?>
+		      			
+
+	
 		      			<input type="text" class="form-control rounded-left" placeholder="Username" required>
 		      		</div>
 	            <div class="form-group d-flex">
