@@ -113,7 +113,7 @@ if(isset($_REQUEST['login_button']) === true){
 								</div>
 	            </div>
 	            <div class="form-group">
-	            	<button type="submit" class="btn btn-primary rounded submit p-3 px-5">Get Started</button>
+	            	<button type="submit" class="btn btn-primary rounded submit p-3 px-5" name="login_button">Get Started</button>
 	            </div>
 	          </form>
 	        </div>
