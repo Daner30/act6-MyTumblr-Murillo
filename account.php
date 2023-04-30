@@ -48,7 +48,7 @@ body {
         <div class="bg-white shadow rounded overflow-hidden">
             <div class="px-4 pt-0 pb-4 cover">
                 <div class="media align-items-end profile-head">
-                    <div class="profile mr-3"><img src="images/profile.jpg" alt="..." width="150" class="rounded mb-2 img-thumbnail"><a href="#" class="btn btn-outline-dark btn-sm btn-block">Sign out</a>
+                    <div class="profile mr-3"><img src="images/profile.jpg" alt="..." width="150" class="rounded mb-2 img-thumbnail"><a href="?logout" class="btn btn-outline-dark btn-sm btn-block">Sign out</a>
 
 
                     </div>
