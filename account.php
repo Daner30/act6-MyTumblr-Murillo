@@ -37,7 +37,6 @@ if (isset($_SESSION['ses_username'])===false){
 
 body {
     background: grey;
-    background: linear-gradient(to right, #e96443, #904e95);
     min-height: 100vh;
     overflow-x: hidden
 }</style>
