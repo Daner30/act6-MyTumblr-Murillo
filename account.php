@@ -1,3 +1,20 @@
+<?php 
+//start the session
+session_start();
+
+//check if the session variables are set or merong laman ang session variables or nag eexist sila
+//this is to check if naka login yung acc or not
+if (isset($_SESSION['ses_username'])===false){
+    header("Location: index.php?logfirst");
+} elseif (isset($_REQUEST['logout'])===true){
+    session_destroy();
+    header("Location: index.php?logout");
+}
+
+
+
+
+?>
 <!doctype html>
                         <html>
                             <head>
