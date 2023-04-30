@@ -96,10 +96,10 @@ if(isset($_REQUEST['login_button']) === true){
 		      			
 
 	
-		      			<input type="text" class="form-control rounded-left" placeholder="Username" required>
+		      			<input type="text" class="form-control rounded-left" placeholder="Username" name="form_username" required>
 		      		</div>
 	            <div class="form-group d-flex">
-	              <input type="password" class="form-control rounded-left" placeholder="Password" required>
+	              <input type="password" class="form-control rounded-left" placeholder="Password" name="form_password" required>
 	            </div>
 	            <div class="form-group d-md-flex">
 	            	<div class="w-50">
