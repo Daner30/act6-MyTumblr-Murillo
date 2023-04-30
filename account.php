@@ -99,7 +99,7 @@ body {
 
             <div class="px-4 py-3">
                 <div class="p-4 rounded shadow-sm bg-light">
-                    <p class="font-italic mb-0">All Rights Reserved. Copyright 2022</p>
+                    <p class="font-italic mb-0">All Rights Reserved. Copyright 2023</p>
                 </div>
             </div>
 
